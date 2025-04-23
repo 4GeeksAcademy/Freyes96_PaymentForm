@@ -76,6 +76,9 @@
                                 <label for="State" class="form-label">State</label>
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Pick a state</option>
+                                    <option>Arizona</option>
+                                    <option>Florida</option>
+                                    <option>Maine</option>
                                 </select>
                             </div>
                             <div class="col-3">
@@ -89,15 +92,41 @@
                         <div class="row mt-4">
                             <div class="col-6">
                                 <label class="form-label mb-2">We accept:</label>
-                                <div class="btn-group" role="group" aria-label="Card icons">
-                                    <button type="button" class="btn btn-light border"><i
-                                            class="fa-brands fa-cc-visa"></i></button>
-                                    <button type="button" class="btn btn-light border"><i
-                                            class="fa-brands fa-cc-mastercard"></i></button>
-                                    <button type="button" class="btn btn-light border"><i
-                                            class="fa-brands fa-cc-amex"></i></button>
-                                    <button type="button" class="btn btn-light border"><i
-                                            class="fa-brands fa-cc-discover"></i></button>
+                                <div class="d-flex align-items-center gap-4 bg-secondary-subtle p-2 rounded">
+
+                                    <!-- Mastercard -->
+                                    <div class="form-check d-flex align-items-center gap-2">
+                                        <input class="form-check-input" type="radio" name="paymentMethod"
+                                            id="mastercard" checked>
+                                        <label class="form-check-label" for="mastercard">
+                                            <i class="fa-brands fa-cc-mastercard fa-lg"></i>
+                                        </label>
+                                    </div>
+
+                                    <!-- Visa -->
+                                    <div class="form-check d-flex align-items-center gap-2">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="visa">
+                                        <label class="form-check-label" for="visa">
+                                            <i class="fa-brands fa-cc-visa fa-lg"></i>
+                                        </label>
+                                    </div>
+
+                                    <!-- Diners -->
+                                    <div class="form-check d-flex align-items-center gap-2">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="diners">
+                                        <label class="form-check-label" for="diners">
+                                            <i class="fa-brands fa-cc-diners-club fa-lg"></i>
+                                        </label>
+                                    </div>
+
+                                    <!-- Discover -->
+                                    <div class="form-check d-flex align-items-center gap-2">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="discover">
+                                        <label class="form-check-label" for="discover">
+                                            <i class="fa-brands fa-cc-discover fa-lg"></i>
+                                        </label>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-6">
